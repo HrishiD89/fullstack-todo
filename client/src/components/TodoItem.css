@@ -1,0 +1,102 @@
+/* AddTodoForm.css */
+
+/* Base styling for the todo item container */
+
+
+.todo-item {
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-family: monospace;
+  }
+  
+  
+
+  .todo-item:hover {
+    background-color: #f9fafb;
+  }
+  
+  .todo-display{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 16px;
+}
+
+   .isDone {
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: bold;
+   }
+  /* Flex container for the input fields and select dropdown */
+  .todo-edit {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .todo-edit input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    outline: none;
+  }
+  
+  .todo-edit input[type="text"]:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 1px #3b82f6;
+  }
+  
+  /* Select dropdown styling */
+  .todo-edit .MuiSelect-root {
+    min-width: 120px;
+  }
+  
+  /* Button container styling */
+  .todo-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.25rem;
+  }
+  
+  .todo-buttons .MuiIconButton-root {
+    padding: 0.25rem;
+  }
+  
+  .todo-buttons .MuiIconButton-root:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+  }
+  
+  /* Specific color styling */
+  .todo-buttons .MuiIconButton-colorPrimary {
+    color: #3b82f6;
+  }
+  
+  .todo-buttons .MuiIconButton-colorError {
+    color: #ef4444;
+  }
+  
+  .todo-editing-inputs  {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 16px;
+  }
+
+  input , Select{
+    font-family: var(--font-family);
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+
+  input {
+    width: 600px;
+  }

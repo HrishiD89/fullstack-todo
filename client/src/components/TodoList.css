@@ -1,0 +1,61 @@
+/* TodoList.css */
+
+/* Container for the todo list page */
+.todo-list-container {
+    padding: 1rem;
+    font-family: monospace;
+  }
+  
+  .todo-list-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Grid layout for the todo category cards */
+  .todo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .todo-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .todo-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  /* Style for each category card */
+  .todo-category-card {
+    min-height: 200px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .todo-category-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Category title styling */
+  .todo-category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  /* Styling for todo items within a category */
+  .todo-category-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  

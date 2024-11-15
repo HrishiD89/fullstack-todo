@@ -1,0 +1,79 @@
+:root {
+  --primary-bg-color: #f0f2f5;
+  --card-bg-color: white;
+  --text-color-dark: #333;
+  --text-color-light: #666;
+  --input-border-color: #ddd;
+  --input-focus-color: #1a73e8;
+  --button-bg-color: #344463;
+  --button-hover-color: #1565c0;
+  --font-family: monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: grey;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  background-color: var(--primary-bg-color);
+  font-family: var(--font-family);
+  padding-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+.todo-card {
+  background-color: var(--card-bg-color);
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 600px;
+}
+
+.todo-card input,
+.todo-card select {
+  font-family: var(--font-family);
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.todo-card input[name="customCategory"] {
+  margin-top: 1rem;
+  font-family: var(--font-family);
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.todo-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--button-bg-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.todo-container button:hover {
+  background-color: var(--button-hover-color);
+}
