@@ -15,7 +15,7 @@ function SignupPage() {
 
     try {
       await axios
-        .post("http://localhost:3000/signup", {
+        .post("https://fullstacktodov1-10u6mr1s.b4a.run/signup", {
           name,
           email,
           password,

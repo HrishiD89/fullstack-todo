@@ -20,7 +20,7 @@ function LoginPage() {
 
     try {
       await axios
-        .post("http://localhost:3000/login", {
+        .post("https://fullstacktodov1-10u6mr1s.b4a.run/login", {
           email,
           password,
         })

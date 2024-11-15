@@ -64,7 +64,7 @@ const TodoPage = () => {
 
   const getTodos = useCallback(async () => {
     try {
-      const response = await axios.get("http://localhost:3000/todos", {
+      const response = await axios.get("https://fullstacktodov1-10u6mr1s.b4a.run/todos", {
         headers: {
           Authorization: token,
         },
@@ -99,7 +99,7 @@ const TodoPage = () => {
 
     try {
       await axios.post(
-        "http://localhost:3000/todo", 
+        "https://fullstacktodov1-10u6mr1s.b4a.run/todo", 
         { title, category },
         { headers: { Authorization: token } }
       );
@@ -140,7 +140,7 @@ const TodoPage = () => {
 
   const handleDelete = async (todoId) => {
     try {
-      const response = await axios.delete("http://localhost:3000/todo", {
+      const response = await axios.delete("https://fullstacktodov1-10u6mr1s.b4a.run/todo", {
         headers: { Authorization: token, todoid: todoId }
       });
       await getTodos();
@@ -159,7 +159,7 @@ const TodoPage = () => {
     console.log("Editing todo:", editingTodo);
     try {
       const response = await axios.put(
-        "http://localhost:3000/todo",
+        "https://fullstacktodov1-10u6mr1s.b4a.run/todo",
         editingTodo,
         { headers: { Authorization: token, todoid: todoId } }
       );
